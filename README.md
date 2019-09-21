@@ -76,7 +76,7 @@ Service URL : http://localhost:8888/api/users
 Request Type : POST
 POSTMAN Request Screenshot
 
-![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/images/sbmr_postman_create_user.png)
+![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/sbmr_postman_create_user.png)
 
 ## Update user service:
 
