@@ -17,7 +17,7 @@ There are four main entities involve in the Application
 Below is the diagram shows the high level architecture of the application
 
 
-![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/images/sbmr-application-architecture.png)
+![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/sbmr-application-architecture.png)
 
 
 
@@ -81,7 +81,7 @@ Request Type : PUT
 POSTMAN Request Screenshot
 
 
-![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/images/sbmr_postman_update_user.png)
+![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/sbmr_postman_update_user.png)
 
 
 ## Find user by id service:
@@ -94,7 +94,7 @@ Request Type : GET
 POSTMAN Request Screenshot
 
 
-![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/images/sbmr_postman_find_user.png)
+![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/sbmr_postman_find_user.png)
 
 
 ## List all users service:
@@ -106,7 +106,7 @@ Service URL : http://localhost:8888/api/users
 Request Type : GET
 POSTMAN Request Screenshot
 
-![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/images/sbmr_postman_list_user.png)
+![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/sbmr_postman_list_user.png)
 
 ## Delete users service:
 
@@ -117,7 +117,7 @@ Service URL : http://localhost:8888/api/users
 Request Type : DELETE
 POSTMAN Request Screenshot
 
-![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/images/sbmr_postman_delete_user.png)
+![alt text](https://raw.githubusercontent.com/bhupeshpadiyar/spring-boot-mysql-rest/master/src/main/resources/static/sbmr_postman_delete_user.png)
 
 
 
