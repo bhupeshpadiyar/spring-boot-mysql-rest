@@ -1,7 +1,7 @@
 # spring-boot-mysql-rest
 Spring Boot RESTFull CRUD (CREATE, READ, UPDATE, DELETE) application with JPA &amp; MySQL 
 
-Read full article on my {{< target-blank "blog" "http://bhupeshpadiyar.com" >}} 
+Read full article on my blog http://bhupeshpadiyar.com
 
 http://bhupeshpadiyar.com/2019/08/crud-rest-api-using-spring-boot-2-jpa-hibernate-and-mysql/
 
