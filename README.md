@@ -9,8 +9,9 @@ http://bhupeshpadiyar.com/2019/08/crud-rest-api-using-spring-boot-2-jpa-hibernat
 
 ## Prerequisite
 1. JDK 1.8
-2. Database MySql- 5+ 
-3. Apache Maven-3
+2. Database MySql- 5.7
+3. Apache Maven- 3
+4. IDE (Spring Toll Suite)
 
 ## Application Stracture
 There are four main entities involve in the Application  
@@ -39,11 +40,9 @@ Below is the diagram shows the high level architecture of the application
       `user_email` varchar(100) NOT NULL,
       `first_name` varchar(45) NOT NULL,
       `last_name` varchar(45) NOT NULL,
-      `user_dob` varchar(45) NOT NULL,
+      `age` int(3) NOT NULL,
       `created_on` datetime DEFAULT NULL,
-      `created_by` varchar(45) DEFAULT NULL,
       `updated_on` datetime DEFAULT NULL,
-      `updated_by` varchar(45) DEFAULT NULL,
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
     ```

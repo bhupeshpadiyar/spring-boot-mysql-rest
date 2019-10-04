@@ -12,8 +12,6 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 /**
@@ -29,34 +27,27 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-
+	
 	@Column(name = "user_email", nullable = false)
-	private String userEmail;
-
+	private String email;
+	
 	@Column(name = "first_name", nullable = false)
 	private String firstName;
 
 	@Column(name = "last_name", nullable = false)
 	private String lastName;
 
-	@Column(name = "user_dob", nullable = false)
-	private Date userDob;
+	@Column(name = "age", nullable = false)
+	private int age;
 
 	@Column(name = "created_on", nullable = false)
 	@CreationTimestamp
 	private Date createdOn;
 
-	@Column(name = "created_by", nullable = false)
-	@CreatedBy
-	private String createdBy;
-
 	@Column(name = "updated_on", nullable = false)
 	@UpdateTimestamp
 	private Date updatedOn;
 
-	@Column(name = "updated_by", nullable = false)
-	@LastModifiedBy
-	private String updatedBy;
 
 	public long getId() {
 		return id;
@@ -66,12 +57,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getUserEmail() {
-		return userEmail;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getFirstName() {
@@ -90,12 +81,12 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	public Date getUserDob() {
-		return userDob;
+	public int getAge() {
+		return age;
 	}
 
-	public void setUserDob(Date userDob) {
-		this.userDob = userDob;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public Date getCreatedOn() {
@@ -106,28 +97,12 @@ public class User {
 		this.createdOn = createdOn;
 	}
 
-	public String getCreatedBy() {
-		return createdBy;
-	}
-
-	public void setCreatedBy(String createdBy) {
-		this.createdBy = createdBy;
-	}
-
 	public Date getUpdatedOn() {
 		return updatedOn;
 	}
 
 	public void setUpdatedOn(Date updatedOn) {
 		this.updatedOn = updatedOn;
-	}
-
-	public String getUpdatedBy() {
-		return updatedBy;
-	}
-
-	public void setUpdatedBy(String updatedBy) {
-		this.updatedBy = updatedBy;
 	}
 
 }

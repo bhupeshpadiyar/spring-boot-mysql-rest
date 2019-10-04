@@ -64,7 +64,7 @@ public class UserController {
 	   * @param user the user
 	   * @return the user
 	   */
-	  @PostMapping("/users")
+	  @PostMapping("/user")
 	  public User createUser(@Valid @RequestBody User user) {
 		
 	    return userRepository.save(user);
@@ -77,7 +77,7 @@ public class UserController {
 	   * @return the response entity
 	   * @throws UserNotFoundException the user not found exception
 	   */
-	  @PutMapping("/users/{id}")
+	  @PutMapping("/user/{id}")
 	  public ResponseEntity<User> updateUser(
 	      @PathVariable(value = "id") Long userId, @Valid @RequestBody User userDetails)
 	      throws UserNotFoundException {
@@ -85,7 +85,7 @@ public class UserController {
 	        userRepository
 	            .findById(userId)
 	            .orElseThrow(() -> new UserNotFoundException("User not found on :: " + userId));
-	    user.setUserEmail(userDetails.getUserEmail());
+	    user.setEmail(userDetails.getEmail());
 	    user.setLastName(userDetails.getLastName());
 	    user.setFirstName(userDetails.getFirstName());
 	    user.setUpdatedOn(new Date());
